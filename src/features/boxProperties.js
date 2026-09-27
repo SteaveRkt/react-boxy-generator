@@ -1,5 +1,4 @@
 import {createSlice} from '@reduxjs/toolkit'
-import nanoid from 'nanoid'
 const initialState = [
     
         {
@@ -8,7 +7,7 @@ const initialState = [
             value:25,
             type:'range',
             minMax:[0,250],
-            slice:"boxProperties",
+            
 
 
         },
@@ -18,7 +17,7 @@ const initialState = [
             value:250,
             type:'range',
             minMax:[0,500],
-            slice:"boxProperties",
+            
 
 
         },{
@@ -27,7 +26,7 @@ const initialState = [
             value:250,
             type:'range',
             minMax:[0,500],
-            slice:"boxProperties",
+            
 
 
         },
@@ -36,7 +35,7 @@ const initialState = [
             name:"Background Color",
             value:"#ffffff",
             type:'color',
-            slice:"boxProperties",
+            
 
 
         },
@@ -49,6 +48,8 @@ export const boxSlice = createSlice({
     reducers:{
         
         updateShadow:(state,action)=>{
+            state.find(el=>el.inputNumber===action.payload.inputNumber).value=action.payload.value
+            
         },
        
     }})
