@@ -28,7 +28,7 @@ export default function Shadow({panelNumber,shadow}) {
         </button>
     {toogleShadow&& 
         <>
-            <div className="flex items-end px-6 py-4">
+            <div className="flex items-end px-6 pt-4">
                 <ShadowCheckbox name="active" shadowId={shadow.id}/>
                 <ShadowCheckbox name="inset" shadowId={shadow.id}/>
                 <button className="rounded bg-red-600 hover:bg-red-700 ml-auto text-sm text-white py-1 px-3">Remove</button>
