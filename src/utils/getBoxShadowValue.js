@@ -5,7 +5,7 @@ export default function getBoxShadowValue(shadow){
             element.inputs.forEach(input=>{
                 input.type=="range"?finalString+=`${input.value}px `:finalString+=`${input.value}`
             })
-            if(shadow.inset) finalString+=` inset`
+            if(element.inset) finalString+=` inset`
             index===(shadow.length -1)?finalString+=";":finalString+=","
         }
         

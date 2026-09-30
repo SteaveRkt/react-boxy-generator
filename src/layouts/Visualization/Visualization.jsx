@@ -13,7 +13,8 @@ export default function Visualization() {
               width:`${boxProperties[2].value}px`,
               height:`${boxProperties[1].value}px`,
               borderRadius:`${boxProperties[0].value}px`,
-              backgroundColor:`${boxProperties[3].value}`      
+              backgroundColor:`${boxProperties[3].value}`,
+                   
     } }
       className="w-[250px] h-[250px] bg-white rounded-xl mb-20 lg:mb-40"></div>
     </div>

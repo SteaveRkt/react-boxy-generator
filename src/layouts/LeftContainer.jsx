@@ -11,7 +11,7 @@ export default function LeftContainer() {
         component:<BoxPanel/>
     }]
   return (
-    <div className="relative mt-20 w-[600px] h-[550px] border rounded-b rounded-tr border-gray-300 shadow-xl bg-gray-50 ">
+    <div className="relative mt-10 w-[600px] h-[550px] border rounded-b rounded-tr border-gray-300 shadow-xl bg-gray-50 ">
       <div className="flex absolute -translate-y-full -left-[1px]">
         {tabsLists.map((tab,index)=>(
             <button

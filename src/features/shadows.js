@@ -110,6 +110,8 @@ export const shadowsSlice = createSlice({
             )
         },
         removeShadow:(state,action)=>{
+           const curentshadow=state.find((elem)=>elem.id===action.payload)
+           state.splice(curentshadow,1)
         },
         updateShadow:(state,action)=>{
             const curentShadow=state.find(state=>state.id===action.payload.shadowId)
